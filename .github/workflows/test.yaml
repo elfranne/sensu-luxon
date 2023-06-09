@@ -15,10 +15,7 @@ jobs:
         go-version: 1.18
     - name: Get Otto
       run: |
-        export PATH=$PATH:$(go env GOPATH)/bin
         go install github.com/robertkrimen/otto/otto@latest
     - name: Test
       run: |
-        export PATH=$PATH:$(go env GOPATH)/bin
-        # cat lib/*.js >> otto_tests/test.js
         otto otto_tests/test.js
