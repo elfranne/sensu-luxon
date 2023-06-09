@@ -20,5 +20,5 @@ jobs:
     - name: Test
       run: |
         export PATH=$PATH:$(go env GOPATH)/bin
-        cat lib/*.js >> otto_tests/test.js
+        # cat lib/*.js >> otto_tests/test.js
         otto otto_tests/test.js

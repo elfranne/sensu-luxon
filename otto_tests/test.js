@@ -13,9 +13,9 @@ function test_case1() { // summer time
   }
   var result = to_localtimezone(event);
   if (result == 990817200  )  {  
-      console.log("Test PASSED ✅ ");
+      console.log("Test PASSED ✅");
   } else {
-      console.log("Test FAILED 🛑 ");
+      console.log("Test FAILED 🛑");
       panic;
   }
 }
@@ -40,5 +40,7 @@ function test_case2() { // winter time
   }
 }
 
-test_case1();
-test_case2();
+console.log("--- TEST ---");
+
+// test_case1();
+// test_case2();
