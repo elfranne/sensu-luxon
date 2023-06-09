@@ -1,0 +1,25 @@
+name: Otto Test
+
+on: [push]
+
+jobs:
+  test:
+    name: Test with Otto
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up Go
+      uses: actions/setup-go@v1
+      with:
+        go-version: 1.18
+      id: go
+    - name: Get Otto
+      run: |
+        export PATH=$PATH:$(go env GOPATH)/bin
+        go get -v github.com/robertkrimen/otto/otto
+    - name: Test
+      run: |
+        export PATH=$PATH:$(go env GOPATH)/bin
+        cat lib/*.js >> otto_tests/test.js
+        otto otto_tests/test.js
