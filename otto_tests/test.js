@@ -43,7 +43,7 @@ function test_case2() { // winter time
   }
 }
 
-console.log("--- TEST ---");
+console.log("--- Loading tests ---");
 
-// test_case1();
-// test_case2();
+test_case1();
+test_case2();
