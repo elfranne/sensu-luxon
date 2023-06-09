@@ -1,6 +1,6 @@
 // Test to run with Otto vm
 
-import to_localtimezone from './lib/import.js';
+import to_localtimezone from '/lib/import.js';
 
 function test_case1() { // summer time
   var event = {
