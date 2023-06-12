@@ -55,8 +55,8 @@ console.log(lastSunday(2023,3));
 console.log(lastSunday(2023,10));
 
 
-str = new Date().toLocaleString('da-DK', { timeZone: 'Europe/Copenhagen' });
-console.log(str);
+date = new Date()
+console.log(new Intl.DateTimeFormat('en-GB', {dateStyle: 'full', timeStyle: 'long', timeZone: 'Europe/Copenhagen' }).format(date));
 
 // test_case1();
 // test_case2();
