@@ -45,7 +45,7 @@ console.log("--- Loading tests ---");
 
 
 date = new Date()
-console.log(new Intl.DateTimeFormat('en-GB', {dateStyle: 'full', timeStyle: 'long', timeZone: 'Europe/Copenhagen' }).format(date));
+console.log(new DateTimeFormat('en-GB', {dateStyle: 'full', timeStyle: 'long', timeZone: 'Europe/Copenhagen' }).format(date));
 
 // test_case1();
 // test_case2();
