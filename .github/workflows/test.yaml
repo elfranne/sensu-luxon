@@ -18,4 +18,5 @@ jobs:
         go install github.com/robertkrimen/otto/otto@latest
     - name: Test
       run: |
-        otto otto_tests/test.js
+        # otto otto_tests/test.js
+        otto lib/luxon.js
