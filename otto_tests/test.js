@@ -42,7 +42,7 @@
 
 console.log("--- Loading tests ---");
 
-const str = new Date().toLocaleString('en-US', { timeZone: 'Europe/Copenhagen' });
+str = new Date().toLocaleString('en-US', { timeZone: 'Europe/Copenhagen' });
 console.log(str);
 
 // test_case1();
