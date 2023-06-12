@@ -1,7 +1,5 @@
 // Test to run with Otto vm
 
-import to_localtimezone from '/lib/import.js';
-
 function test_case1() { // summer time
   var event = {
     "entity": {
@@ -13,7 +11,7 @@ function test_case1() { // summer time
     },
     "timestamp": 990810000 // 25 May 2001 17:00 UTC
   }
-  var result = to_localtimezone(event);
+  var result = require('/lib/import.js').to_localtimezone(event);
   if (result == 990817200  )  {  
       console.log("Test PASSED ✅");
   } else {
@@ -33,7 +31,7 @@ function test_case2() { // winter time
     },
     "timestamp": 1703437200 // 24 Dec 2023 17:00 UTC
   }
-  var result = to_localtimezone(event);
+  var result = require('/lib/import.js').to_localtimezone(event);
   if (result == 1703440800  )  { 
       console.log("Test PASSED ✅ ");
   } else {
