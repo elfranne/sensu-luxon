@@ -42,5 +42,8 @@ function test_case2() { // winter time
 
 console.log("--- Loading tests ---");
 
+const str = new Date().toLocaleString('en-US', { timeZone: 'Europe/Copenhagen' });
+console.log(str);
+
 test_case1();
 test_case2();
